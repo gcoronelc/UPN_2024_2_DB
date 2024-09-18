@@ -1,0 +1,15 @@
+select * from Customers;
+
+SELECT country, COUNT(1) CLIENTES
+FROM Customers
+GROUP BY country
+HAVING COUNT(1) > 10
+ORDER BY 2 DESC;
+
+SELECT 5*6;
+
+SELECT TOP 2 WITH TIES
+	country, COUNT(1) CLIENTES
+FROM Customers
+GROUP BY country
+ORDER BY 2 DESC;
